@@ -1,0 +1,72 @@
+/* 
+		_footer.scss
+*/
+
+/*
+										---FOOTER---
+*/
+
+
+
+#footer{
+	position: relative;
+	//color: rgba(black, 0.4);
+	//min-height: 150px;
+	line-height: 170%;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-size: cover;
+}
+.footer-content{
+	@media (max-width: 991px) {
+		.container{
+			padding-bottom: 0;
+		}
+		.align-center{
+			flex-direction: column;
+		}
+	}
+}
+.icon-offset{
+	@media (min-width: 992px){
+		padding-right: 15px;
+	}
+}
+.footer-contacts{
+	.fa{
+		font-size: 20px;
+		color: $color-1;
+	}
+	.fa-map-marker{
+		font-size: 25px;
+	}
+	.fa-envelope{
+		font-size: 18px;
+	}
+}
+.socicons{
+	font-size: 20px;
+	li{
+		margin: 0 5px;
+		&:last-child{
+			padding-right: 2px;
+			margin-right: 0;
+		}
+	}
+	.fa-paper-plane{
+		font-size: 16px;
+	}
+	.fa-facebook{
+		font-size: 18px;
+	}
+}
+
+.copy-content{
+	@media (max-width: 991px) {
+		margin-top: 15px;
+	}
+}
+.dev{
+	font-size: 0.9em;
+}
+
