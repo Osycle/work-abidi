@@ -13,23 +13,6 @@
 	@return str-slice( quote($string), 1, str-length(quote($string))-2 );
 }
 
-
-
-@mixin img-flex-align( $align: center, $mheight: 0, $tag: ".img-content" ) {
-
-	#{$tag}{
-
-		@if $mheight !=	0{	min-height: $mheight; }
-
-		display: flex;
-		align-items: $align;
-		&.center 				{ align-items: center; }
-		&.top 					{ align-items: end; align-items: flex-end; }
-		&.start 				{ align-items: start; align-items: flex-start; }
-	}
-
-}
-
 @mixin placeholder-color( $color ) {
 	&::-moz-placeholder { 
 		color: $color;
@@ -70,59 +53,7 @@
 
 
 
-@mixin align-cells( $width: 75, $item: 3, $style: table, $tag: figure ) {
 
-	$mrow : ( (100 - $width)/($item*2) )+%;
-	
-	margin-left: -#{$mrow};
-	margin-right: -#{$mrow};
-
-	letter-spacing: -6px;
-	*{
-		letter-spacing: 0;
-	}
-
-	#{$tag}{
-
-		margin-left: $mrow;
-		margin-right: $mrow;
-
-		@if $style ==	block{
-			float: left;
-			width: ($width/$item)+%;
-		} 
-
-		@else if $style == table {
-
-			display: inline-table;
-			vertical-align: top;
-			width: ($width/$item)+%;
-			@include img-auto-adaptive();
-
-
-		}
-	}
-}
-
-
-@mixin align-fixWidth( $width, $items: 0, $fwidth: $container-lg-value, $tag: "figure" ){	
-	letter-spacing: -6px;
-	*{
-		letter-spacing: 0;
-	}
-	
-	//margin-right: -( ( $fwidth - ($width * $items) ) / ($fwidth / 100) / $items/2 )+%;
-	margin-left: -(( ( $fwidth - ($width * $items) ) /($items - 1) )/2)+px;
-	margin-right: -(( ( $fwidth - ($width * $items) ) /($items - 1) )/2)+px;
-	#{$tag}{
-		@include img-auto-adaptive();
-		margin-left: (( ( $fwidth - ($width * $items) ) /($items - 1) )/2)+px;
-		margin-right: (( ( $fwidth - ($width * $items) ) /($items - 1) )/2)+px;
-		width: $width+px;
-		display: inline-block;
-		vertical-align: top;
-	}
-}
 
 
 @mixin boxes-items( $width: 75, $items: 3, $tag: figure ) {
@@ -157,5 +88,16 @@
 	}
 
 
+
+}
+@mixin cols-items( $items: 3, $tag: figure ) {
+	margin-left: -15px;
+	margin-right: -15px;
+	&>*{
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		width: (100/$items)+%;
+	}
 
 }

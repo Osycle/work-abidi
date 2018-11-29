@@ -641,5 +641,5 @@ img[auto]{
 	filter: brightness(0%) invert(0%);
 }
 .filter-color-1{
-	filter: brightness(0%) invert(60%) sepia() hue-rotate(180deg);
+	filter: brightness(0) invert(60%) sepia() hue-rotate(180deg) saturate(400%);
 }

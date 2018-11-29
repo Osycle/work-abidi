@@ -368,11 +368,6 @@
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta
 
-
-			if( scrolledDiv($(".staff-progress")) && !staffProgressStatus ){
-				staffProgress();
-				staffProgressStatus = !staffProgressStatus;
-			}
 		});
 		$(window).trigger("scroll");
 

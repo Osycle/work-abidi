@@ -18,9 +18,9 @@ $font-family-3: "sans-serif";
 $color-scroll: $color-1;
 $color-footer: #0071BC;
 
-$color-gray-1: #E1E1E1;
+$color-gray-1: #f1f1f1;
 $color-gray-2: #b7b7b7;
-$color-gray-3: #343434;
+$color-gray-3: #282828;
 
 $bg-color-black: #000;
 $bg-color-gray: $color-gray-3;
@@ -414,64 +414,42 @@ table {
 	position: absolute;
 }
 
-[class*="boxes"]:not([class*="flexboxes"]){	
-	//text-align: center;
-	&:not(.boxes-nosub)>.boxes-cell, &>figure{
-		display: inline-table;
-		vertical-align: top;
-		.img-content{
-			//@include img-auto-adaptive();
-			// img:not([width]){
-			// 	width: 100%;
-			// }
-		}
-	}
-	&.vam{
-		figure{
-			vertical-align: middle;
-		}
-	}
-}
 
-.boxes-1{
-	@include boxes-items( 100, 1 );
-}
-.boxes-2{
-	@include boxes-items( 95, 2 );
-}
-.boxes-3{
-	@include boxes-items( 92.2, 3 );
-}
-.boxes-4{
-	@include boxes-items( 90, 4 );
-}
-.boxes-5{
-	@include boxes-items( 90, 5 );
-}
-.boxes-6{
-	@include boxes-items( 90, 6 );
-}
+.boxes-1{@include boxes-items(100, 1);}
+.boxes-2{@include boxes-items(95, 2);}
+.boxes-3{@include boxes-items(92.2, 3);}
+.boxes-4{@include boxes-items(90, 4);}
+.boxes-5{@include boxes-items(90, 5);}
+.boxes-6{@include boxes-items(90, 6);}
+
+.cols-1{@include cols-items(1);}
+.cols-2{@include cols-items(2);}
+.cols-3{@include cols-items(3);}
+.cols-4{@include cols-items(4);}
+.cols-5{@include cols-items(5);}
+.cols-6{@include cols-items(6);}
 
 @media ( max-width:991px ){
-	.boxes-6, .boxes-5, .boxes-4{
-		@include boxes-items( 90, 3 );
-	}
+	.boxes-6, .boxes-5, .boxes-4{ @include boxes-items(90, 3);}
+	.cols-6, .cols-5, .cols-4{ @include cols-items(3);}
 }
 @media ( max-width:991px ){
-	.boxes-4{
-		@include boxes-items( 90, 2 );
-	}
+	.boxes-4{ @include boxes-items( 90, 2 );}	
+	.cols-4{@include cols-items(2);}
 }
 @media ( max-width:767px ){
-	.boxes-6, .boxes-5, .boxes-4, .boxes-3{
-		@include boxes-items( 90, 2 );
-	}
+	.boxes-6, .boxes-5, .boxes-4, .boxes-3{ @include boxes-items(90, 2);}
+	.cols-6, .cols-5, .cols-4, .cols-3{ @include cols-items(2);}
 }
 @media ( max-width:480px ){
-	.boxes-6, .boxes-5, .boxes-4, .boxes-3, .boxes-2{
-		@include boxes-items( 100, 1 );
-	}
+	.boxes-6, .boxes-5, .boxes-4, .boxes-3, .boxes-2{ @include boxes-items(100, 1); }
+	.cols-6, .cols-5, .cols-4, .cols-3, .cols-2{ @include cols-items(1);}
 }
+
+
+
+
+
 
 
 .cell-hover{
@@ -749,7 +727,6 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
-
 	font: 14px $font-family-1;
 	overflow-x: hidden;
 	//color: white;
@@ -890,9 +867,8 @@ h1, h2, h3, h4{
 h1{
 	line-height: 125%;
 	font-size: em(30, 15);
-	text-transform: uppercase;
 	margin-bottom: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	@media (max-width: 430px) {
 		font-size: em(33/1.2, 15);
 	}
@@ -965,7 +941,7 @@ main{
 	overflow: hidden;
 	//min-height: 300px;
 	z-index: 1;
-	color: black;
+	color: #282828;
 	@extend .list-style-1;
 	@media (max-width: 991px){
 		text-align: center ;
