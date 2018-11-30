@@ -71,7 +71,9 @@
 		$mrow: 0;
 		$wid: 100;
 	}
-
+	#{$tag}{
+		display: inline-block;
+	}
 	&:not(.serried){
 		margin-left: -+($mrow)+%;
 		margin-right: -+( $mrow )+%;

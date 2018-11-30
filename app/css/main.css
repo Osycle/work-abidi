@@ -7322,6 +7322,8 @@ table {
   letter-spacing: -5px; }
   .boxes-1 * {
     letter-spacing: 0; }
+  .boxes-1 figure {
+    display: inline-block; }
   .boxes-1:not(.serried) {
     margin-left: 0%;
     margin-right: 0%; }
@@ -7336,6 +7338,8 @@ table {
   letter-spacing: -5px; }
   .boxes-2 * {
     letter-spacing: 0; }
+  .boxes-2 figure {
+    display: inline-block; }
   .boxes-2:not(.serried) {
     margin-left: -1.29%;
     margin-right: -1.29%; }
@@ -7350,6 +7354,8 @@ table {
   letter-spacing: -5px; }
   .boxes-3 * {
     letter-spacing: 0; }
+  .boxes-3 figure {
+    display: inline-block; }
   .boxes-3:not(.serried) {
     margin-left: -1.29%;
     margin-right: -1.29%; }
@@ -7364,6 +7370,8 @@ table {
   letter-spacing: -5px; }
   .boxes-4 * {
     letter-spacing: 0; }
+  .boxes-4 figure {
+    display: inline-block; }
   .boxes-4:not(.serried) {
     margin-left: -1.29%;
     margin-right: -1.29%; }
@@ -7378,6 +7386,8 @@ table {
   letter-spacing: -5px; }
   .boxes-5 * {
     letter-spacing: 0; }
+  .boxes-5 figure {
+    display: inline-block; }
   .boxes-5:not(.serried) {
     margin-left: -1.29%;
     margin-right: -1.29%; }
@@ -7392,6 +7402,8 @@ table {
   letter-spacing: -5px; }
   .boxes-6 * {
     letter-spacing: 0; }
+  .boxes-6 figure {
+    display: inline-block; }
   .boxes-6:not(.serried) {
     margin-left: -1.29%;
     margin-right: -1.29%; }
@@ -7461,6 +7473,8 @@ table {
     letter-spacing: -5px; }
     .boxes-6 *, .boxes-5 *, .boxes-4 * {
       letter-spacing: 0; }
+    .boxes-6 figure, .boxes-5 figure, .boxes-4 figure {
+      display: inline-block; }
     .boxes-6:not(.serried), .boxes-5:not(.serried), .boxes-4:not(.serried) {
       margin-left: -1.29%;
       margin-right: -1.29%; }
@@ -7484,6 +7498,8 @@ table {
     letter-spacing: -5px; }
     .boxes-4 * {
       letter-spacing: 0; }
+    .boxes-4 figure {
+      display: inline-block; }
     .boxes-4:not(.serried) {
       margin-left: -1.29%;
       margin-right: -1.29%; }
@@ -7507,6 +7523,8 @@ table {
     letter-spacing: -5px; }
     .boxes-6 *, .boxes-5 *, .boxes-4 *, .boxes-3 * {
       letter-spacing: 0; }
+    .boxes-6 figure, .boxes-5 figure, .boxes-4 figure, .boxes-3 figure {
+      display: inline-block; }
     .boxes-6:not(.serried), .boxes-5:not(.serried), .boxes-4:not(.serried), .boxes-3:not(.serried) {
       margin-left: -1.29%;
       margin-right: -1.29%; }
@@ -7530,6 +7548,8 @@ table {
     letter-spacing: -5px; }
     .boxes-6 *, .boxes-5 *, .boxes-4 *, .boxes-3 *, .boxes-2 * {
       letter-spacing: 0; }
+    .boxes-6 figure, .boxes-5 figure, .boxes-4 figure, .boxes-3 figure, .boxes-2 figure {
+      display: inline-block; }
     .boxes-6:not(.serried), .boxes-5:not(.serried), .boxes-4:not(.serried), .boxes-3:not(.serried), .boxes-2:not(.serried) {
       margin-left: 0%;
       margin-right: 0%; }
@@ -7579,7 +7599,7 @@ table {
     -ms-flex-align: center;
     align-items: center;
     pointer-events: none;
-    background-color: rgba(0, 184, 217, 0.6);
+    background-color: rgba(19, 98, 154, 0.7);
     color: white;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -7641,7 +7661,6 @@ table {
   .btn-style button, .btn-def button, .btn-icon button, .btn-opacity button {
     width: 100%; }
   .btn-style a, .btn-def a, .btn-icon a, .btn-opacity a, .btn-style button, .btn-def button, .btn-icon button, .btn-opacity button, .btn-style .btn-this, .btn-def .btn-this, .btn-icon .btn-this, .btn-opacity .btn-this {
-    font-weight: 600;
     line-height: normal;
     position: relative;
     font-size: 0.95em; }
@@ -7678,7 +7697,7 @@ table {
 .btn-opacity {
   background-color: transparent;
   border: 1px solid currentColor;
-  color: currentColor;
+  color: #13629a;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -8944,6 +8963,36 @@ textarea.form-control {
     border-color: #13629a; }
   .short-advantages-items figure:hover circle {
     stroke-dashoffset: 0; }
+
+@media (min-width: 991px) {
+  .short-about {
+    background-image: url("../img/bg/bg-short-about.jpg");
+    background-repeat: no-repeat;
+    background-position: right center; }
+    .short-about img {
+      float: right; }
+    .short-about h1 {
+      padding-left: 15px;
+      border-left: 5px solid #13629a; } }
+
+.short-productions-items figure {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 50% !important; }
+
+.short-productions-items .img {
+  height: 257px; }
+
+.short-productions-items .desc-content {
+  margin-bottom: 20px; }
+
+.short-productions-items .hover-content .cell-hover {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
 
 /* 
 		_footer.scss

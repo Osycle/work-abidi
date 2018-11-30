@@ -352,3 +352,46 @@
 		}
 	}
 }
+
+
+
+//short-about
+.short-about{
+	@media (min-width: 991px) {
+		background-image: url('../img/bg/bg-short-about.jpg');
+		background-repeat: no-repeat;
+		background-position: right center;
+		img{
+			float: right;
+		}
+		h1{
+			padding-left: 15px;
+			border-left: 5px solid $color-1;
+		}
+	}
+}
+
+
+//short-productions
+.short-productions{
+
+}
+.short-productions-items{
+	figure{
+		border-radius: 20px;
+		position: relative;
+		overflow: hidden;
+		width: 50% !important;
+	}
+	.img{
+		height: 257px;
+	}
+	.desc-content{
+		margin-bottom: 20px;
+	}
+	.hover-content{
+		.cell-hover{
+			align-items: flex-end;
+		}
+	}
+}
