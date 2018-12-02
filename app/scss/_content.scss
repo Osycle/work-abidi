@@ -118,7 +118,7 @@
 	figure{
 		overflow: hidden;
 		height: $slider-height;
-		transition: all 2s ease;
+		transition: all 1.8s ease;
 		left: 0 !important;
 		&:before{
 			@extend .claf;
