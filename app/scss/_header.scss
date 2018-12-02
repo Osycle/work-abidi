@@ -35,7 +35,7 @@ $header-min-menu: 70px;
 
 .header-hidden{
 	//position: relative;
-	height: $header-top-height+30;
+	height: $header-top-height;
 	background-color: transparent;
 	transition: height 0.3s ease-in-out 0.4s;
 	@media ( max-width: 991px ){

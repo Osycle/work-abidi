@@ -229,27 +229,24 @@
         percentPosition: true,
         cellAlign: 'center'
       });
-    //transports-carousel
-      $('.transports-type-items').map(function( i, el ){
-
-    	if ( $(el).find("figure").length > 3 || checkSm() )
-		    	$(el).flickity({
-		        imagesLoaded: true,
-		        autoPlay: 3000,
-		        freeScroll: false,
-		        pauseAutoPlayOnHover: false,
-		        arrowShape: arrowStyle,
-		        initialIndex: 0,
-		        prevNextButtons: true,
-		        draggable: false,
-		        adaptiveHeight: true, 
-		        wrapAround: false,
-		        pageDots: false,
-		        contain: true,
-		        percentPosition: true,
-		        cellAlign: 'center'
-		      });
-      })
+	    //short-partners-carousel
+	    if ($(".short-partners-carousel .carousel-items figure").length > 1 || checkSm())
+	      $('.short-partners-carousel .carousel-items').flickity({
+	        imagesLoaded: true,
+	        autoPlay: 3000,
+	        freeScroll: false,
+	        pauseAutoPlayOnHover: true,
+	        arrowShape: arrowStyle,
+	        initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
+	        prevNextButtons: true,
+	        draggable: false,
+	        adaptiveHeight: true, 
+	        wrapAround: false,
+	        pageDots: !checkSm(),
+	        contain: true,
+	        percentPosition: true,
+	        cellAlign: 'center'
+	      });
 
     	
 
