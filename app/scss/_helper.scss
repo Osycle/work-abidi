@@ -193,7 +193,8 @@ html{
 @media (min-width:1200px){
 	@for $i from 0 through 12{
 		.box-lg-#{$i} {
-			flex-basis: ( ($i*100) /12)+%;
+			width: 10*$i+%;
+			//flex-basis: ( ($i*100) /12)+%;
 		}
 	}
 }

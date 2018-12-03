@@ -18,7 +18,7 @@ $font-family-3: "sans-serif";
 $color-scroll: $color-1;
 $color-footer: #0071BC;
 
-$color-gray-1: #f1f1f1;
+$color-gray-1: #d6d6d6;
 $color-gray-2: #b7b7b7;
 $color-gray-3: #282828;
 
@@ -152,12 +152,13 @@ html{
 .list-style-1{
 	ul:not([class]){
 		position: relative;
+		padding-left: 15px;
 		li{
 			list-style: none;
-			list-style-position: inside;
+			list-style-position: outside;
 			list-style-image: url('../img/icons/list-icon.png');
-			margin-top: 5px;
-			margin-bottom: 5px;
+			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 	}
 
@@ -192,12 +193,10 @@ html{
 .breadcrumb{
 	background: transparent;
 	&, a, .active{ 		
-		transition: all 0.3s ease-in;
-		font-size: em(15, 16);
 		a:hover{
 			transform: translateY(-5px);
 			text-decoration: none;
-			color: $color-2;
+			color: white;
 		}
 		&.reverse{
 			a{
@@ -207,20 +206,20 @@ html{
 				}
 			}
 			li:before{
-				color: gray;
+				color: white;
 			}
 		}
 	}
 	a{
-		color: gray;
+		color: $color-1;
 	}
 	.active{
 		a{
-			color: lighten($color-1, 5%);
+			color: white;
 		}
 	}
 	& > li + li:before{
-		color: gray;
+		color: white;
 		font-family: FontAwesome;
 		content: " / ";
 		font-size: 0.9em;
@@ -650,24 +649,23 @@ table {
 	.pagination{
 		li{
 			display: inline-block;
-			//border-radius: 5px;
 			//margin: 0 3px;
 			margin-right: 5px;
 			margin-top: 5px;
 			font-weight: 500;
-			width: 25px;
-			height: 25px;
 			text-align: center;
+			border-radius: 5px;
 			background-color: transparent;
 			transition: all 0.3s ease;
 			a{
 				color: black;
 				display: block;
 				background-color: transparent;
-				padding: 3px 7px;
+				padding: 5px 10px;
 			}
 			&:hover{
 				//transform: scale(0.9);
+				background-color: darken($color-gray-1, 5%);
 			}
 			&.active{
 				background-color: $color-1;
@@ -853,7 +851,7 @@ thined{
 }
 h1,h2,h3,h4,h5{
 	color: inherit;
-	line-height: 125%;
+	line-height: 140%;
 	font-family: $font-family-1;
 }
 
@@ -864,7 +862,6 @@ h1, h2, h3, h4{
 	position: relative;	
 }
 h1{
-	line-height: 125%;
 	font-size: em(30, 15);
 	margin-bottom: 15px;
 	font-weight: 600;
@@ -875,7 +872,7 @@ h1{
 h2{
 	font-size: em(24, 15);
 	margin-bottom: 15px;
-	font-weight: 700;
+	font-weight: 500;
 	@media (max-width: 430px) {
 		font-size: em(25/1.2, 15);
 	}
@@ -888,7 +885,6 @@ h3{
 	}
 }
 h4{
-	text-transform: uppercase;
 	font-weight: 700;
 	font-size: em(16, 15);
 }
@@ -954,7 +950,6 @@ main{
 	ul:not([class]){
 		text-align: left;
 		margin-top: 10px;
-		font-size: 0.95em;
 		margin-bottom: 10px;
 	}
 

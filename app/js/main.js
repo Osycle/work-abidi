@@ -234,6 +234,7 @@
 	      $('.short-partners-carousel .carousel-items').flickity({
 	        imagesLoaded: true,
 	        autoPlay: 3000,
+	        //groupCells: 3,
 	        freeScroll: false,
 	        pauseAutoPlayOnHover: true,
 	        arrowShape: arrowStyle,
@@ -355,12 +356,12 @@
 		$(window).on("scroll", function(e) {
 
 			//Адаптация хедера при скролинге
-			if ($(window).scrollTop() > 160 && headerRange == false) {
+			if ($(window).scrollTop() > 100 && headerRange == false) {
 
 				headerRange = true;
 				if (minMenu) minMenu.addClass("scrolled").addClass("down");
 
-			} else if ($(window).scrollTop() < 160 && headerRange == true) {
+			} else if ($(window).scrollTop() < 100 && headerRange == true) {
 				headerRange = !true;
 				if (minMenu) minMenu.removeClass("scrolled");
 			} //.originalEvent.wheelDelta

@@ -33,18 +33,18 @@
 }
 .fancybox-bg{
 	background-color: rgba(black, 0.8);
-	&:before{
-		@extend .claf;
-		border: 0px outset rgba($color-2, 1);
-		background-color: rgba($color-2, 0.6);
-		transform: translate(-100%, -100%);
-	}
-	&:after{
-		@extend .claf;
-		border: 0px outset rgba($color-2, 1);
-		background-color: rgba($color-2, 0.6);
-		transform: translate(100%, 100%);
-	}
+	// &:before{
+	// 	@extend .claf;
+	// 	border: 0px outset rgba($color-2, 1);
+	// 	background-color: rgba($color-2, 0.6);
+	// 	transform: translate(-100%, -100%);
+	// }
+	// &:after{
+	// 	@extend .claf;
+	// 	border: 0px outset rgba($color-2, 1);
+	// 	background-color: rgba($color-2, 0.6);
+	// 	transform: translate(100%, 100%);
+	// }
 
 }
 .fancybox-is-open{
@@ -54,26 +54,34 @@
 		&:before, &:after{
 			transition: all 0.8s ease;
 		}
-		&:before{
-			@extend .claf;
-			border: 300px outset rgba($color-2, 1);
-			background-color: rgba($color-2, 0.6);
-			transform: translate(-25%, -25%);
-		}
-		&:after{
-			@extend .claf;
-			border: 300px outset rgba($color-2, 1);
-			background-color: rgba($color-2, 0.6);
-			transform: translate(25%, 25%);
-		}
+		// &:before{
+		// 	@extend .claf;
+		// 	border: 300px outset rgba($color-2, 1);
+		// 	background-color: rgba($color-2, 0.6);
+		// 	transform: translate(-25%, -25%);
+		// }
+		// &:after{
+		// 	@extend .claf;
+		// 	border: 300px outset rgba($color-2, 1);
+		// 	background-color: rgba($color-2, 0.6);
+		// 	transform: translate(25%, 25%);
+		// }
 
 	}
 }
 
-.fancybox-close-small:after{
-	border-radius: 0;
-	background-color: transparent;
-	color: white;
+.fancybox-close-small{	
+	&:after{
+		border-radius: 0;
+		background-color: transparent;
+		color: white;
+	}
+	&:hover{
+		&:after{
+			color: white;
+			background-color: transparent;
+		}
+	}
 }
 
 //thumbs снизу

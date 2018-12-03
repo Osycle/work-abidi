@@ -35,7 +35,7 @@ $header-min-menu: 70px;
 
 .header-hidden{
 	//position: relative;
-	height: $header-top-height;
+	height: $header-top-height+30;
 	background-color: transparent;
 	transition: height 0.3s ease-in-out 0.4s;
 	@media ( max-width: 991px ){
@@ -182,7 +182,7 @@ $header-min-menu: 70px;
 			&:last-child{
 				border-right: none;
 			}
-			&:hover{
+			&:hover, &.active{
 				a{
 					border-color: $color-1;
 				}
@@ -232,7 +232,7 @@ $header-min-menu: 70px;
 				//transition: all 0.6s ease 0.1s;
 			}
 		}
-		a:hover{
+		a:hover, &.active{
 			color: $color-2;
 			&:before, &:after{
 				transform: scaleX(0.5);
@@ -605,27 +605,34 @@ textarea.form-control{
 
 
 
-.form-checkin{
-	background-color: #f6f5f1;
-	border-radius: 10px;
-	input{
+.form-def{
+	background-color: $color-1;
+	background-image: url('../img/bg/bg-form.jpg');
+	background-size: cover;
+	border-radius: 15px;
+	color: white;
+	@media (min-width: 992px) {
+		width: 360px;
+	}
+	input.feedback-control{
+		height: 50px;
+		color: black;
+		padding-left: 55px;
 		background-color: white;
 	}
-	.btn-def{
-
-		&:hover{
-			background-color: $color-2 !important;
-		}
-		@media (max-width: 991px) {
-			width: 65%;
-			a{
-				padding: 10px 15px;
-			}
-			margin-top: 10px;
-			margin-bottom: 10px;
+	.input-icon{
+		overflow: hidden;
+		margin-top: 10px;
+		border-radius: 30px;
+	}
+	[class*="ls-icon"]{
+		padding-left: 0 !important;
+		&:before{
+			font-size: 20px;
+			padding: 25px 15px;
+			background-color: $color-3;
+			height: 100%;
 		}
 	}
 }
-
-
 
