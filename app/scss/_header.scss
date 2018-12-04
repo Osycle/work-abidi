@@ -95,7 +95,14 @@ $header-min-menu: 70px;
     margin-top: 10px;
 	}
 }
-
+.header-phone{
+	a{
+		transition: all 0.3s ease;
+	}
+	a:hover{
+		color: $color-2;
+	}
+}
 .header-scroll{
 	.header-top{
 		transform-origin: 50% 0;
@@ -615,6 +622,7 @@ textarea.form-control{
 		width: 360px;
 	}
 	input.feedback-control{
+		border: 1px solid $color-1;
 		height: 50px;
 		color: black;
 		padding-left: 55px;
@@ -636,3 +644,15 @@ textarea.form-control{
 	}
 }
 
+
+input.feedback-control{
+	border: 1px solid white;
+	background-color: transparent;
+	border-radius: 25px;
+	height: 35px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	@include placeholder-color( rgba(white, 0.4) );
+}

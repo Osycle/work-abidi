@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?latio4');
+  src:  url('fonts/icomoon.eot?latio4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?latio4') format('truetype'),
+    url('fonts/icomoon.woff?latio4') format('woff'),
+    url('fonts/icomoon.svg?latio4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ls-icon-"], [class*=" ls-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ls-icon-arrow-pointing-to-right:before {
+  content: "\e900";
+}
+.ls-icon-arrow-point-to-right:before {
+  content: "\e901";
+}
+.ls-icon-call:before {
+  content: "\e902";
+}
+.ls-icon-diamond:before {
+  content: "\e903";
+}
+.ls-icon-earth:before {
+  content: "\e904";
+}
+.ls-icon-envelope-shape:before {
+  content: "\e905";
+}
+.ls-icon-maps-and-flags:before {
+  content: "\e906";
+}
+.ls-icon-pills:before {
+  content: "\e907";
+}
+.ls-icon-placeholder:before {
+  content: "\e908";
+}
+.ls-icon-portfolio:before {
+  content: "\e909";
+}
+.ls-icon-user:before {
+  content: "\e90a";
+}

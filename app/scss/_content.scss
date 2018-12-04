@@ -6,11 +6,23 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 }
 .ls-icon-call{
 	font-size: 13px;
 }
+.ls-icon-add-new-file{
+	background-image: url('../img/icons/add-new-file.svg');
+	height: 18px;
+	width: 20px;
+}
+.ls-icon-envelope-send{
+	background-image: url('../img/icons/envelope-send.svg');
+	height: 18px;
+	width: 20px;
+}
+
 .header-phone-icon{
 	background-color: white;
 	font-size: 13px;
@@ -785,3 +797,68 @@
 		padding-bottom: 10px;
 	}
 }
+
+
+
+
+
+//vacancies
+.vacancies-accordion{
+	.panel-default{
+		border: none;
+		margin: 10px 0;
+		border-color: $color-1;
+	}
+	.panel-heading{
+		background-color: transparent;
+		padding: 0;
+		h4{
+			font-weight: 400;
+			text-transform: none;
+			font-size: 1.1em;
+		}
+		.fa{
+			position: absolute;
+			right: 15px;
+			transform: rotate(180deg);
+			top: 20px;
+		}
+		a{
+			display: block;
+			padding: 15px 15px;
+			transition: all 0.3s ease;
+			border-radius: 35px;
+			border: 1px solid $color-1;
+			&:not(.collapsed){
+				color: white;
+				background-color: $color-1;
+				.fa{
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+.form-item{
+	border: 1px solid $color-1;
+	width: 100%;
+	@include placeholder( rgba( black, 0.5 ) );
+	padding: 8px 15px;
+
+}
+
+.vacancies-form{
+	textarea{
+		resize: none;
+		height: 92px;
+	}
+	input{
+		height: 37px;
+	}
+	.btn-def button{
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+}
+

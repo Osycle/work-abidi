@@ -1046,9 +1046,10 @@ hr{
 }
 
 input.pie-form-control{
-	height: 50px;
+	height: 40px;
 	padding: 5px 12px;
-
+	border-radius: 20px;
+	border-color: $color-gray-1;
 	&[type="checkbox"]{
 		height: auto;
 		margin-top: 0;
@@ -1056,18 +1057,27 @@ input.pie-form-control{
 	&:not([class*="box-"]):not([class*="col-"]){
 		width: 100%;
 	}
+	&:focus{
+		border-color: $color-2;
+	}
 }
 textarea.pie-form-control{
 	resize: none;
+	border-color: $color-gray-1;
 	padding: 10px 12px;
 	min-height: 120px;
+	border-radius: 20px;
 	&:not([class*="box-"]):not([class*="col-"]){
 		width: 100%;
+	}
+	&:focus{
+		border-color: $color-2;
 	}
 }
 select.pie-form-control{
 	height: 35px;
 	padding: 5px 12px;
+	border-color: $color-gray-1;
 	background-color: transparent;
 	&:focus{
 		outline: none;
@@ -1077,6 +1087,12 @@ select.pie-form-control{
 		padding: 30px;
 		font-weight: 600;
 		background-color: transparent;
+	}
+}
+.input-content{
+	label{
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }
 @media (max-width:991px) {

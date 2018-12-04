@@ -94,17 +94,6 @@
 
 
 
-input.feedback-control{
-	border: 1px solid white;
-	background-color: transparent;
-	border-radius: 15px;
-	height: 35px;
-	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
-	color: white;
-	@include placeholder-color( rgba(white, 0.4) );
-}
 .input-icon{
 	position: relative;
   display: flex;
