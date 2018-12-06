@@ -189,7 +189,12 @@ $header-min-menu: 70px;
 			&:last-child{
 				border-right: none;
 			}
-			&:hover, &.active{
+			&.active{
+				a{
+					border-color: $color-1;
+				}
+			}
+			&:hover{
 				a{
 					border-color: $color-1;
 				}
