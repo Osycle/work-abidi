@@ -9219,8 +9219,8 @@ input.feedback-control {
   .left-bar a {
     display: block;
     width: 100%;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
     padding: 2px 15px;
     padding-right: 40px;
     -webkit-transition: 0.4s;
@@ -9229,6 +9229,10 @@ input.feedback-control {
   .left-bar h4 {
     margin-top: 10px;
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     font-weight: 400; }
     .left-bar h4 a:not(.collapsed)[aria-expanded="true"] {
       background-color: #00b8d9;
@@ -9243,13 +9247,19 @@ input.feedback-control {
     -o-transition: 0.4s;
     transition: 0.4s;
     background-color: #c9c9c9;
-    -webkit-border-radius: 0 0 15px 15px;
-    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 15px 15px;
+    border-radius: 15px 15px;
     margin-left: 10px;
     margin-right: 10px; }
   @media (min-width: 992px) {
     .left-bar {
       margin-top: 80px; } }
+  .left-bar [data-toggle] {
+    position: relative;
+    width: 38px; }
+    @media (min-width: 991px) {
+      .left-bar [data-toggle] {
+        margin-right: 10px; } }
 
 .productions-article .article-img-content .img {
   -webkit-border-radius: 20px;
