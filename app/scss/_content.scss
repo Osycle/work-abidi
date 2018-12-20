@@ -39,22 +39,22 @@
 }
 
 
-.ls-icon-diamond{
-	background-image: url('../img/icons/diamond.svg');
-	height: 45px;
-}
-.ls-icon-earth{
-	background-image: url('../img/icons/earth.svg');
-	height: 45px;
-}
-.ls-icon-pills{
-	background-image: url('../img/icons/pills.svg');
-	height: 45px;
-}
-.ls-icon-portfolio{
-	background-image: url('../img/icons/portfolio.svg');
-	height: 45px;
-}
+// .ls-icon-diamond{
+// 	background-image: url('../img/icons/diamond.svg');
+// 	height: 45px;
+// }
+// .ls-icon-earth{
+// 	background-image: url('../img/icons/earth.svg');
+// 	height: 45px;
+// }
+// .ls-icon-pills{
+// 	background-image: url('../img/icons/pills.svg');
+// 	height: 45px;
+// }
+// .ls-icon-portfolio{
+// 	background-image: url('../img/icons/portfolio.svg');
+// 	height: 45px;
+// }
 
 .fa-star{
 	color: $color-gray-1;
@@ -333,6 +333,7 @@
 	}
 	.ls-icon{
 		transition: all 0.5s ease;
+		font-size: 40px;
 	}
 	svg{
 		z-index: 1;
@@ -358,7 +359,7 @@
 		border-radius: 20px;
 		transition: all 0.5s ease;
 		box-shadow: 0 0px 0px #cecece;
-		background-color: $color-gray-1;
+		background-color: lighten($color-gray-1, 10%);
 		z-index: 1;
 		&:after{
 			text-align: right;
